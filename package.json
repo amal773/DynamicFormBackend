@@ -10,7 +10,6 @@
     "@cap-js/postgres": "^2.0.3",
     "@cap-js/sqlite": "^2",
     "@sap/cds": "^9.1.0",
-    "@sap/xssec": "^4.8.0",
     "express": "^4"
   },
   "engines": {
@@ -20,9 +19,7 @@
     "start": "cds-serve"
   },
   "cds": {
-    "auth": {
-      "strategy": "mocked"
-    },
+    "auth": false,
     "requires": {
       "db": {
         "kind": "postgres",
