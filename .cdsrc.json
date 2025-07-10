@@ -1,0 +1,14 @@
+{
+  "auth": false,
+  "requires": {
+    "db": {
+      "kind": "postgres",
+      "pool": false,
+      "credentials": {
+        "ssl": {
+          "rejectUnauthorized": false
+        }
+      }
+    }
+  }
+}
