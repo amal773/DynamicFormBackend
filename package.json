@@ -20,7 +20,9 @@
     "start": "cds-serve"
   },
   "cds": {
-    "auth": false,
+    "auth": {
+      "strategy": "mocked"
+    },
     "requires": {
       "db": {
         "kind": "postgres",
