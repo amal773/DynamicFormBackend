@@ -6,34 +6,30 @@
   "license": "UNLICENSED",
   "private": true,
   "dependencies": {
-    "express": "^4",
     "@cap-js/cds-types": "^0.10.0",
     "@cap-js/postgres": "^2.0.3",
     "@cap-js/sqlite": "^2",
-    "@sap/cds": "^9.1.0"
+    "@sap/cds": "^9.1.0",
+    "@sap/xssec": "^4.8.0",
+    "express": "^4"
   },
   "engines": {
     "node": "^22"
   },
-  "devDependencies": {
-  },
   "scripts": {
     "start": "cds-serve"
   },
-"cds": {
-  "requires": {
-    "db": {
-      "kind": "postgres",
-      "pool": false,
-      "credentials": {
-        "ssl": {
-          "rejectUnauthorized": false
+  "cds": {
+    "requires": {
+      "db": {
+        "kind": "postgres",
+        "pool": false,
+        "credentials": {
+          "ssl": {
+            "rejectUnauthorized": false
+          }
         }
-
+      }
     }
   }
-
-
-}
-}
 }
