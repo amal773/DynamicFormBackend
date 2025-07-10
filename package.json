@@ -20,6 +20,7 @@
     "start": "cds-serve"
   },
   "cds": {
+    "auth": false,
     "requires": {
       "db": {
         "kind": "postgres",
