@@ -19,17 +19,20 @@
     "start": "cds-serve"
   },
   "cds": {
-    "auth": false,
-    "requires": {
-      "db": {
-        "kind": "postgres",
-        "pool": false,
-        "credentials": {
-          "ssl": {
-            "rejectUnauthorized": false
-          }
+  "requires": {
+    "auth": {
+      "kind": "mocked"
+    },
+    "db": {
+      "kind": "postgres",
+      "pool": false,
+      "credentials": {
+        "ssl": {
+          "rejectUnauthorized": false
         }
       }
     }
   }
+}
+
 }
