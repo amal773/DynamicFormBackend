@@ -10,6 +10,7 @@
     "@cap-js/postgres": "^2.0.3",
     "@cap-js/sqlite": "^2",
     "@sap/cds": "^9.1.0",
+    "cors": "^2.8.5",
     "express": "^4"
   },
   "engines": {
@@ -19,20 +20,19 @@
     "start": "cds-serve"
   },
   "cds": {
-  "requires": {
-    "auth": {
-      "kind": "mocked"
-    },
-    "db": {
-      "kind": "postgres",
-      "pool": false,
-      "credentials": {
-        "ssl": {
-          "rejectUnauthorized": false
+    "requires": {
+      "auth": {
+        "kind": "mocked"
+      },
+      "db": {
+        "kind": "postgres",
+        "pool": false,
+        "credentials": {
+          "ssl": {
+            "rejectUnauthorized": false
+          }
         }
       }
     }
   }
-}
-
 }
